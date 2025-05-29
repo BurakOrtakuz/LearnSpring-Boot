@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
-    private ICoach coach;
+    private final ICoach coach;
 
     @Autowired
     public DemoController(ICoach coach) {
